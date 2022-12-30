@@ -53,7 +53,7 @@ if (WYRM_DOCS)
   file(MAKE_DIRECTORY "${PROJECT_BINARY_DIR}/docs/cache")
   configure_file(docs/conf.py.in "${PROJECT_BINARY_DIR}/docs/conf.py")
 
-  add_custom_target(wyrm_docs
+  add_custom_target(wyrm_docs ALL
     COMMAND ${SPHINX_BUILD}
       -b html -d "${PROJECT_BINARY_DIR}/docs/cache"
       -j auto
