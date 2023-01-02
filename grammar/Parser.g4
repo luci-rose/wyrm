@@ -7,13 +7,10 @@ options {
 root : topLevelStatement* EOF ;
 
 topLevelStatement : classDef
-                  | classExtension
                   | interpreterCode
                   ;
 
-classDef : CLASSNAME superclass? CURLY_OPEN classVarDecl* methodDef* CURLY_CLOSE
-         | CLASSNAME SQUARE_OPEN name? SQUARE_CLOSE superclass? CURLY_OPEN classVarDecl* methodDef* CURLY_CLOSE
-         ;
+classDef : CLASSNAME superclass? CURLY_OPEN classVarDecl* methodDef* CURLY_CLOSE ;
 
 superclass : COLON CLASSNAME ;
 

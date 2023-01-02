@@ -4,8 +4,8 @@ Compiling Wyrm
 Prerequisites
 *************
 
-Like LLVM, we use CMake to
-generate our local build system and Sphinx to generate documentation.
+Like LLVM, we use CMake to generate our local build system and Sphinx to
+generate documentation.
 
 Downloading LLVM
 ================
